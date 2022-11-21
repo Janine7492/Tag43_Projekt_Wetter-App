@@ -8,7 +8,7 @@ function newPlaceByCity() {
     const city = document.getElementById("city").value;
 
 
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=d139cbc7866c17125cd3fab45ca9d111`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=d139cbc7866c17125cd3fab45ca9d111`)
         .then((responseCity) => responseCity.json())
         .then((dataCity) => {
             console.log(dataCity);
