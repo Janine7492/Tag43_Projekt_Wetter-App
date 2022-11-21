@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Weather App</h1>
+        <div>
+            <div>
+                <input type="text" name="latitude" id="lat" placeholder="Enter the latitude">
+                <label for="lat">Latitude</label>
+            </div>
+            <div>
+                <input type="text" name="longitude" id="lon" placeholder="Enter the longitude">
+                <label for="lon">Longitude</label>
+            </div>
+            <button type="button" onclick="newPlace()">Get weather for this place</button>
+        </div>
+        <div>
+            <div>
+                <input type="text" name="city" id="city" placeholder="Enter the name of a city">
+                <label for="city">City</label>
+            </div>
+            <button type="button" onclick="newPlaceByCity()">Get weather for this place</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>Weather in</h2>
+        <h2 id="currentPlaceOutput">Current Place</h2>
+        <img src="" alt="" id="picOfWeather">
+        <h3 id="degreeOutput">Grad C</h3>
+        <p id="cloudsOutput">Wolken</p>
+        <p id="dateOutput">Current date</p>
+        <table>
+            <tr>
+                <td>Local time</td>
+                <td id="localTimeOutput">Example</td>
+            </tr>
+            <tr>
+                <td>Wind</td>
+                <td id="windOutput">Example</td>
+            </tr>
+            <tr>
+                <td>Cloudiness</td>
+                <td id="cloudinessOutput">Example</td>
+            </tr>
+            <tr>
+                <td>Pressure</td>
+                <td id="pressureOutput">Example</td>
+            </tr>
+            <tr>
+                <td>Humidity</td>
+                <td id="humidityOutput">Example</td>
+            </tr>
+            <tr>
+                <td>Sunrise</td>
+                <td id="sunriseOutput">Example</td>
+            </tr>
+            <tr>
+                <td>Sunset</td>
+                <td id="sunsetOutput">Example</td>
+            </tr>
+            <tr>
+                <td>Geo coords</td>
+                <td id="coordsOutput">Example</td>
+            </tr>
+        </table>
+    </main>
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
