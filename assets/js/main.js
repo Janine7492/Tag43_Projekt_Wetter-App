@@ -33,7 +33,7 @@ function newPlaceByCity() {
 
                     // Image
                     // ===============================
-                    document.getElementById("picOfWeather").src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+                    document.getElementById("picOfWeather").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
 
                     // Degree
                     // ===============================
@@ -122,7 +122,7 @@ function newPlace() {
 
             // Image
             // ===============================
-            document.getElementById("picOfWeather").src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+            document.getElementById("picOfWeather").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
 
             // Degree
             // ===============================
@@ -205,7 +205,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&uni
 
         // Image
         // ===============================
-        document.getElementById("picOfWeather").src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+        document.getElementById("picOfWeather").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
 
         // Degree
         // ===============================
